@@ -1,0 +1,78 @@
+---
+title: "GLOWUP Vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  fig.width = 10,
+  fig.height = 6,
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(glowup)
+```
+
+# Basics
+
+To demonstrate my deep and intimate knowledge with all things R, We will take a look
+at a most useful glowup function. If you, dear reader, ever need the word derp printed
+out on demand, this package is just the thing for you. Observe:
+
+```{r}
+print_derp()
+```
+
+Wow, that was really something right?
+
+# Let's Get Into it
+
+We will now demonstrate a fundamental concept in stats - the Central Limit Theorem.
+Given enough observations, the sampling distribution will always be normal, despite
+whatever distribution the sample's population has.We will demonstrate on my myclt
+function, which will sample from a uniform population:
+
+```{r}
+tmp = myclt(30, 10000)
+```
+
+Look at that! Sure looks normal to me. 
+
+# Holy Stats Man
+
+Next we will demonstrate the concept of bootstrapping. Let's say that a sample was
+really hard or costly to obtain, but the sample you did get with your grant money
+was a good representation of the population in question. We can use bootstrapping
+to extract a bit more out of these data by resampling the sample. Observe:
+
+```{r}
+sam = rnorm(20, mean=0, sd=10)
+myboot2(x=sam, alpha=0.005)
+```
+
+
+# I am Confident in STATS
+
+Let's finish up our package demonstration by doing a classic confidence interval
+estimation. This concept is wicked important for many reasons, but the reason I
+believe it is crucial is because the idea of a confidence interval is the basis 
+for running statistical tests on data or sets of data. Let's go simple and look
+at getting a point estimate for the mean and estimate where the population's true
+mean is likely to truly reside:
+
+```{r}
+sam = rnorm(2550, mean=0, sd=3)
+myci(sam, alpha=0.5)
+```
+
+
+# Going FURTHER
+
+I have made a shiny APP! See .rbf file for demo.

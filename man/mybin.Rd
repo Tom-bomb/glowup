@@ -2,7 +2,7 @@
 % Please edit documentation in R/mybin.R
 \name{mybin}
 \alias{mybin}
-\title{Title}
+\title{mybin}
 \usage{
 mybin(iter = 100, n = 10, p = 0.5)
 }
@@ -14,8 +14,14 @@ mybin(iter = 100, n = 10, p = 0.5)
 \item{p}{- the probability of a 'Success'}
 }
 \value{
-
+the calculated probability of success
 }
 \description{
-Title
+Simulate a binomial distribution as a series of bernoulli trials
+}
+\examples{
+mybin()
+
+x<-mybin(10000, n=50, p=0.69)
+
 }

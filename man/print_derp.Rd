@@ -2,7 +2,7 @@
 % Please edit documentation in R/print_derp.R
 \name{print_derp}
 \alias{print_derp}
-\title{Title Crucial printing function}
+\title{print_derp}
 \usage{
 print_derp()
 }
@@ -10,5 +10,8 @@ print_derp()
 
 }
 \description{
-Title Crucial printing function
+print the string "DERP" to standard output
+}
+\examples{
+print_derp()
 }

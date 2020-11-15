@@ -1,13 +1,19 @@
-#' Title
+#' mybin
+#'
+#' @description Simulate a binomial distribution as a series of bernoulli trials
 #'
 #' @param iter - the number of n-samples to draw
 #' @param n - sample size for each iteration
 #' @param p - the probability of a 'Success'
 #'
-#' @return
+#' @return the calculated probability of success
 #' @export
 #'
 #' @examples
+#' mybin()
+#'
+#' x<-mybin(10000, n=50, p=0.69)
+#'
 mybin=function(iter=100,n=10, p=0.5){
   # make a matrix to hold the samples
   #initially filled with NA's
